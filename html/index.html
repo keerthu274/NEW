@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Signup</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div class="form-container" id="login-form">
+        <h2>Login</h2>
+        <input type="text" placeholder="Username"><br><br>
+        <input type="password" placeholder="Password"><br><br>
+        <a href="#" class="forgot-password">Forget Password?</a><br>
+        <button class="btn">Login</button><br>
+        <p>Not a Member? <a href="#" onclick="showSignup()">Sign up</a></p>
+    </div>
+
+    <div class="form-container" id="signup-form" style="display: none;">
+        <h2>Sign Up</h2>
+        <input type="text" placeholder="Full Name"><br><br>
+        <input type="email" placeholder="Email"><br><br>
+        <input type="text" placeholder="Username"><br><br>
+        <input type="password" placeholder="Password"><br><br>
+        <input type="password" placeholder="Repeat Password"><br><br>
+        <div class="terms">
+            <input type="checkbox"> I agree to the <a href="#">Terms of Use</a>
+        </div><br>
+        <button class="btn">Sign Up</button><br>
+        <p>Already a Member? <a href="#" onclick="showLogin()">Log in</a></p>
+    </div>
+
+    <script src="../script/script.js"></script>
+</body>
+</html>
